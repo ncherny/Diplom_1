@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class BunTests {
     private Bun bun;
 
-    private static float EXPECTED_PRICE = 10.5f;
-    private static String EXPECTED_NAME = "Флюоресцентная булка";
+    private static final float EXPECTED_PRICE = 10.5f;
+    private static final String EXPECTED_NAME = "Флюоресцентная булка";
 
     @BeforeEach
     public void setUp() {

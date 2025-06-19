@@ -1,5 +1,3 @@
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
@@ -11,8 +9,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class IngredientTests {
     Ingredient ingredient;
 
-    private static float EXPECTED_PRICE = 10.5f;
-    private static String EXPECTED_NAME = "Говяжий метеорит";
+    private static final float EXPECTED_PRICE = 10.5f;
+    private static final String EXPECTED_NAME = "Говяжий метеорит";
 
     @Test
     public void getPricePositiveTest() {

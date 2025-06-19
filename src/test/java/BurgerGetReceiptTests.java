@@ -1,9 +1,6 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvFileSource;
-import org.junit.jupiter.params.provider.CsvSource;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -13,6 +10,7 @@ import praktikum.Ingredient;
 import praktikum.IngredientType;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
 
 @ExtendWith(MockitoExtension.class)
 public class BurgerGetReceiptTests {
@@ -20,9 +18,9 @@ public class BurgerGetReceiptTests {
     @Mock
     Bun bun;
     @Mock
-    Ingredient ingredient1;
+    Ingredient ingredient1 = mock(Ingredient.class);
     @Mock
-    Ingredient ingredient2;
+    Ingredient ingredient2 = mock(Ingredient.class);;
 
     private static final String BUN_NAME = "Краторная булка";
     private static final float BUN_PRICE = 0;

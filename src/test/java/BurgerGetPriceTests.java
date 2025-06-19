@@ -10,16 +10,17 @@ import praktikum.Burger;
 import praktikum.Ingredient;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
 
 @ExtendWith(MockitoExtension.class)
 public class BurgerGetPriceTests {
 
     @Mock
-    private Bun bun;
+    private Bun bun = mock(Bun.class);
     @Mock
-    private Ingredient ingredient1;
+    private Ingredient ingredient1 = mock(Ingredient.class);
     @Mock
-    private Ingredient ingredient2;
+    private Ingredient ingredient2 = mock(Ingredient.class);
 
     private Burger burger;
 
